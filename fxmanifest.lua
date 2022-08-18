@@ -14,10 +14,12 @@ client_scripts {
 files {
 	'starter_shells_k4mb1.ytyp',
 	'stream/max_lcfurnished_shell/lc_appartment_shell.ytyp',
+	'stream/VinewoodHousing/vinewood_housing_k4mb1.ytyp',
 }
 
 -- Default (included)
 data_file 'DLC_ITYP_REQUEST' 'starter_shells_k4mb1.ytyp'
 data_file 'DLC_ITYP_REQUEST' 'stream/max_lcfurnished_shell/lc_appartment_shell.ytyp'
+data_file 'DLC_ITYP_REQUEST' 'stream/VinewoodHousing/vinewood_housing_k4mb1.ytyp'
 
 lua54 'yes'

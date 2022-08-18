@@ -402,3 +402,4 @@ exports('CreateGTAIVApartment', function(spawn)
 	TeleportToInterior(spawn.x + POIOffsets.exit.x, spawn.y + POIOffsets.exit.y, spawn.z + POIOffsets.exit.z, POIOffsets.exit.h)
     return { objects, POIOffsets }
 end)
+
