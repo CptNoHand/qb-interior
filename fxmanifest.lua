@@ -13,11 +13,11 @@ client_scripts {
 
 files {
 	'starter_shells_k4mb1.ytyp',
-	'stream/max_lcfurnished_shell/lc_appartment_shell.ytyp'
+	'stream/max_lcfurnished_shell/lc_appartment_shell.ytyp',
 }
 
 -- Default (included)
-data_file 'DLC_ITYP_REQUEST' 'starter_shells_k4mb1.ytyp',
+data_file 'DLC_ITYP_REQUEST' 'starter_shells_k4mb1.ytyp'
 data_file 'DLC_ITYP_REQUEST' 'stream/max_lcfurnished_shell/lc_appartment_shell.ytyp'
 
 lua54 'yes'
