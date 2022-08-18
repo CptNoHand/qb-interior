@@ -392,11 +392,11 @@ exports('CreateGTAIVApartment', function(spawn)
     while not IsScreenFadedOut() do
         Wait(10)
     end
-	RequestModel(`max_lcfurnished_shell`)
-	while not HasModelLoaded(`max_lcfurnished_shell`) do
+	RequestModel(`lc_appartment`)
+	while not HasModelLoaded(`lc_appartment`) do
 	    Wait(1000)
 	end
-	local house = CreateObject(`max_lcfurnished_shell`, spawn.x, spawn.y, spawn.z, false, false, false)
+	local house = CreateObject(`lc_appartment`, spawn.x, spawn.y, spawn.z, false, false, false)
     FreezeEntityPosition(house, true)
     objects[#objects+1] = house
 	TeleportToInterior(spawn.x + POIOffsets.exit.x, spawn.y + POIOffsets.exit.y, spawn.z + POIOffsets.exit.z, POIOffsets.exit.h)
