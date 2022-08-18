@@ -383,3 +383,22 @@ exports('CreateFurniMotelStandard', function(spawn)
 	TeleportToInterior(spawn.x + POIOffsets.exit.x, spawn.y + POIOffsets.exit.y, spawn.z + POIOffsets.exit.z, POIOffsets.exit.h)
     return { objects, POIOffsets }
 end)
+
+exports('CreateGTAIVApartment', function(spawn)
+	local objects = {}
+    local POIOffsets = {}
+	POIOffsets.exit = json.decode('{"x":0.5,"y":-5.8,"z":1.5,"h":1.2633972168}')
+	DoScreenFadeOut(500)
+    while not IsScreenFadedOut() do
+        Wait(10)
+    end
+	RequestModel(`max_lcfurnished_shell`)
+	while not HasModelLoaded(`max_lcfurnished_shell`) do
+	    Wait(1000)
+	end
+	local house = CreateObject(`max_lcfurnished_shell`, spawn.x, spawn.y, spawn.z, false, false, false)
+    FreezeEntityPosition(house, true)
+    objects[#objects+1] = house
+	TeleportToInterior(spawn.x + POIOffsets.exit.x, spawn.y + POIOffsets.exit.y, spawn.z + POIOffsets.exit.z, POIOffsets.exit.h)
+    return { objects, POIOffsets }
+end)
